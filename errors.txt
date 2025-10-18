@@ -1,0 +1,19 @@
+Fix -------
+    - home Screen current catalog scroll not working
+    - catalog page UI improvement
+    - CSS to Nativewind
+    - Test store and improve it
+
+
+
+
+ADD --------
+    - Catalog has icons of food
+    - ON delete a record or log file is downloaded
+
+
+
+
+
+PIN -------
+    - pin for all usecase is 1234
