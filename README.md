@@ -56,11 +56,6 @@ This repository is participating in **Hacktoberfest 2025**! Our goals for the ev
 
 ---
 
-## Issues & Good First Issues
-
-We have issues labeled **good first issue** to help new contributors get started. Feel free to pick one or suggest improvements via new issues.
-
----
 
 ## License
 
