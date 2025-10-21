@@ -1,19 +1,56 @@
-# Meal Planner & Calendar App
+# 🍽️ Mess Billing & Meal Management
 
-Welcome to the **Meal Planner & Calendar App** — a React Native app that lets users manage daily meals with a clean calendar interface and persistent local storage.
+[![Expo](https://img.shields.io/badge/Expo-54.0.12-blue.svg)](https://expo.dev/)
+[![React Native](https://img.shields.io/badge/React%20Native-0.81.4-blue.svg)](https://reactnative.dev/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.9.2-blue.svg)](https://www.typescriptlang.org/)
+[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
+[![Hacktoberfest](https://img.shields.io/badge/Hacktoberfest-2025-orange.svg)](https://hacktoberfest.com/)
 
----
+A modern, user-friendly React Native application for managing mess/cafeteria billing and meal planning. Built with Expo and TypeScript, featuring an intuitive calendar interface and offline-first architecture.
 
-## About the Project
+![App Demo](assets/images/app-demo.gif)
 
-This app allows users to:
+## 🎯 Features
 
-- Manage a catalog of meal items (add, update, delete)
-- Assign meals (breakfast, lunch, snack, dinner) to specific dates
-- View and edit meals on past and current dates (past and future dates are disabled for editing)
-- Store all data locally using AsyncStorage for offline support
+- 📱 **Cross-Platform**: Works seamlessly on iOS and Android
+- 📅 **Interactive Calendar**: Visual meal planning interface
+- 💰 **Billing Management**: Track and manage meal expenses
+- 🔄 **Offline Support**: Full functionality without internet
+- 🎨 **Dynamic Theming**: Supports light/dark mode
+- 📊 **Reports & Analytics**: Monthly expense summaries
+- 🔔 **Reminders**: Meal schedule notifications
+- 👥 **Multi-user Support**: Different roles and permissions
 
-The project aims to provide an easy and intuitive meal planning experience.
+## 🚀 Quick Start
+
+### Prerequisites
+
+- [Node.js](https://nodejs.org/) (v18 or newer)
+- [npm](https://www.npmjs.com/) (v7 or newer)
+- [Expo Go](https://expo.dev/go) app for iOS/Android
+
+### Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/madhav-15/Mess_Billing.git
+   cd Mess_Billing
+   ```
+
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+3. Start the development server:
+   ```bash
+   npm start
+   ```
+
+4. Open on your device:
+   - Scan the QR code with Expo Go (Android)
+   - Scan the QR code with Camera app (iOS)
 
 ---
 
@@ -27,39 +64,105 @@ This repository is participating in **Hacktoberfest 2025**! Our goals for the ev
 
 ---
 
-## How to Get Started
+## 🏗️ Project Structure
 
-1. **Fork** the repository  
-2. **Clone** your fork locally  
-3. Run `npm install` to install dependencies  
-4. Run the app on your emulator or device with `npm run start`  
-5. Explore the codebase where the core logic lives:
+```
+Mess_Billing/
+├── app/                   # Main application screens
+│   ├── _layout.tsx       # Root layout configuration
+│   ├── modal.tsx         # Modal screen components
+│   └── (tabs)/           # Tab-based navigation screens
+│       ├── index.tsx     # Home screen
+│       └── explore.tsx   # Explore/search screen
+├── assets/               # Static assets
+│   └── images/          # Image assets
+├── components/           # Reusable components
+│   ├── Calendar.tsx     # Calendar component
+│   ├── themed-*.tsx     # Theme-aware components
+│   └── ui/              # UI components
+├── constants/           # App-wide constants
+│   └── theme.ts        # Theme configuration
+├── hooks/              # Custom React hooks
+├── utils/              # Utility functions
+└── scripts/            # Build and maintenance scripts
+```
 
-- `app/(tabs)/index.tsx`
-- `app/(tabs)explore.tsx`
-- `components/Calendar.tsx`
-- `utils/store.tsx`
+### Key Components
 
+- `Calendar.tsx`: Interactive calendar with meal planning interface
+- `themed-text.tsx`: Text component with theme support
+- `store.tsx`: State management and persistence logic
+- `use-theme-color.ts`: Custom hook for theme management
 
-6. Pick an issue or open a new one if you find something worth improving  
-7. Submit your Pull Request!
+## 🤝 Contributing
+
+We love your input! We want to make contributing as easy and transparent as possible. Please see our [Contributing Guide](CONTRIBUTING.md) for detailed instructions.
+
+### Getting Started with Development
+
+1. Fork the repository
+2. Create your feature branch
+   ```bash
+   git checkout -b feature/amazing-feature
+   ```
+3. Make your changes
+4. Run tests and linting
+   ```bash
+   npm run lint
+   ```
+5. Commit your changes
+   ```bash
+   git commit -m "feat: add amazing feature"
+   ```
+6. Push to your branch
+   ```bash
+   git push origin feature/amazing-feature
+   ```
+7. Open a Pull Request
+
+### Code Style
+
+- Use TypeScript for type safety
+- Follow the existing code structure
+- Write meaningful commit messages (using [Conventional Commits](https://www.conventionalcommits.org/))
+- Add comments for complex logic
+- Update documentation as needed
+
+## 🎉 Hacktoberfest 2025
+
+We're excited to participate in Hacktoberfest 2025! Here's how you can contribute:
+
+### Beginner-friendly Issues
+
+- UI/UX improvements
+- Documentation updates
+- Bug fixes
+- Test coverage
+- New features
+
+### How to Participate
+
+1. Look for issues labeled `hacktoberfest` and `good-first-issue`
+2. Comment on the issue you want to work on
+3. Fork and clone the repository
+4. Make your changes
+5. Submit a Pull Request
+
+Your PR will be reviewed and merged if it meets our quality standards.
+
+## 📝 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🙏 Acknowledgments
+
+- [Expo](https://expo.dev/) for the amazing development platform
+- [React Native](https://reactnative.dev/) for the core framework
+- All our contributors who make this project better every day
 
 ---
 
-## Contribution Guidelines
-
-- Be respectful and inclusive to all community members  
-- Follow existing code style and project architecture  
-- Ensure your code passes linting and works on both Android and iOS  
-- Provide clear commit messages and pull request descriptions  
-- Review and test your changes before submitting
-
----
-
-
-## License
-
-This project is licensed under the [MIT License](LICENSE).
+Made with ❤️ by the Mess Billing team
 
 
 
